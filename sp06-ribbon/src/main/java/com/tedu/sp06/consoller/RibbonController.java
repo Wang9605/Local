@@ -25,7 +25,7 @@ public class RibbonController {
 	    //这里服务器路径用 service-id 代替，ribbon 会向服务的多台集群服务器分发请求
 		return rt.getForObject("http://item-service/{1}", JsonResult.class, orderId);
 	}
-
+	//这里服务器路径用 service-id 代替，ribbon 会向服务的多台集群服务器分发请求
 	@PostMapping("/item-service/decreaseNumber")
 	public JsonResult decreaseNumber(@RequestBody List<Item> items) {
 		return rt.postForObject("http://item-service/decreaseNumber", items, JsonResult.class);
