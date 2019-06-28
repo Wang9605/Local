@@ -30,7 +30,7 @@ public class RibbonController {
 	public JsonResult decreaseNumber(@RequestBody List<Item> items) {
 		return rt.postForObject("http://item-service/decreaseNumber", items, JsonResult.class);
 	}
-
+	////1111
 	/////////////////////////////////////////
 	
 	@GetMapping("/user-service/{userId}")
