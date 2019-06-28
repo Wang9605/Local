@@ -32,7 +32,7 @@ public class RibbonController {
 	}
 	////1111
 	/////////////////////////////////////////
-	
+	//dafsdaffwa
 	@GetMapping("/user-service/{userId}")
 	public JsonResult<User> getUser(@PathVariable Integer userId) {
 		return rt.getForObject("http://user-service/{1}", JsonResult.class, userId);
@@ -43,7 +43,7 @@ public class RibbonController {
 			@PathVariable Integer userId, Integer score) {
 		return rt.getForObject("http://user-service/{1}/score?score={2}", JsonResult.class, userId, score);
 	}
-	
+	//23
 	/////////////////////////////////////////
 	
 	@GetMapping("/order-service/{orderId}")
